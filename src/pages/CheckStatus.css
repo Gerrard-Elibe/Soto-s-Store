@@ -1,0 +1,37 @@
+.check-status {
+  padding: 6rem 2rem 2rem; /* 6rem top padding to push below the navbar */
+  background-color: #f3f4f6;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.check-status input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  max-width: 90%;
+}
+
+.check-status button {
+  padding: 1rem 2rem;
+  background-color: #f97316;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.check-status button:hover {
+  background-color: #ef4444;
+}
+
+.check-status p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}

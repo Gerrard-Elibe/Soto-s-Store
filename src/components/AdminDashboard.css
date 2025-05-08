@@ -1,0 +1,157 @@
+/* Admin Dashboard Layout */
+.admin-dashboard {
+  padding: 2rem;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.admin-dashboard.dark {
+  background-color: #1f2937;
+  color: white;
+}
+
+/* Header */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.admin-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.logout-btn {
+  background-color: #e74c3c; /* Red */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+
+.admin-header h2 {
+  font-size: 2rem;
+  color: #320271;
+}
+
+.admin-header button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-header button:hover {
+  background-color: #ef4444;
+}
+
+/* Search & Filter */
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+input, select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* Applicant Cards */
+.applicant-card {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.applicant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.admin-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.accept-btn {
+  background-color: #10b981; /* Green */
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.accept-btn:hover {
+  background-color: #059669;
+}
+
+.decline-btn {
+  background-color: #ef4444; /* Red */
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.decline-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #f97316;
+  color: white;
+}
+
+.pagination button.active {
+  background-color: #f97316;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
